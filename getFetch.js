@@ -31,7 +31,7 @@ var fetchGet = (function mainGetFunction() {
         return url;
     }
     return {Get:Get};
-})
+})();
 
-module.exports = fetchGet;
+exports.default = fetchGet;
 
