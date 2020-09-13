@@ -1,6 +1,6 @@
 {
   "name": "fetch-get-param",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a fetch get request that accepts params as an objects and sends request in the URL approprietly , since that is not supported in fetch.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,17 @@
     "fetch",
     "get"
   ],
+  "homepage": "https://github.com/henoktsegaye/Fetch-Get-Params/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henoktsegaye/Fetch-Get-Params.git"
+  },
   "author": "Henok Tsegaye",
+  "bugs": {
+    "url": "https://github.com/henoktsegaye/Fetch-Get-Params/issues",
+    "email": "maxhenock@gmail.com"
+  },
+  "readme": "https://github.com/henoktsegaye/Fetch-Get-Params/blob/master/README.md",
   "license": "ISC"
+
 }
