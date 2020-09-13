@@ -10,7 +10,7 @@ var fetchGet = (function mainGetFunction() {
      * @param {Object} headers objects to put as header for your request
      */
 
-    function Get(url, options = {}, headers) {
+    function Get(url, options = {}, headers = {}) {
         return fetch(optionsToUrl(), {
             method: 'Get',
             headers: headers
