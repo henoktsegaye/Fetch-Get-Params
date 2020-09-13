@@ -1,0 +1,15 @@
+{
+  "name": "fetch-get-param",
+  "version": "1.0.0",
+  "description": "a fetch get request that accepts params as an objects and sends request in the URL approprietly , since that is not supported in fetch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fetch",
+    "get"
+  ],
+  "author": "Henok Tsegaye",
+  "license": "ISC"
+}
