@@ -30,8 +30,8 @@ var fetchGet = (function mainGetFunction() {
         }
         return url;
     }
-    return {Get};
+    return {Get:Get};
 })
 
-export default fetchGet;
+module.exports = fetchGet;
 

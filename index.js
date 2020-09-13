@@ -1,3 +1,5 @@
 const { default: fetchGet } = require("./getFetch");
 
-exports = fetchGet;
+exports.Get = function (url , params , headers) {
+    call(fetchGet.Get, params,headers);
+}
