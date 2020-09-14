@@ -1,5 +1,7 @@
 var fetchGet = (function mainGetFunction() {
     'use-strict'
+
+
     /**
      * Get Request that recievs params as objects
      * This basically uses fetch , make sure you have that
@@ -11,11 +13,51 @@ var fetchGet = (function mainGetFunction() {
      */
 
     function Get(url, options = {}, headers = {}) {
-        return fetch(optionsToUrl(), {
-            method: 'Get',
+        return fetch(optionsToUrl(url , options), {
+            method: 'GET',
             headers: headers
         });
     }
+
+    /**
+     * Put Request that recievs params as objects
+     * This basically uses fetch , make sure you have that
+     * 
+     * 
+     * @param {String} url url with out params
+     * @param {Object} options params with key and value pair
+     * @param {Object} headers objects to put as header for your request
+     */
+
+    function Put(url, options = {}, headers = {}) {
+        return fetch(optionsToUrl(url, options), {
+            method: 'PUT',
+            headers: headers
+        });
+    }
+
+
+    /**
+     * Put Request that recievs params as objects
+     * This basically uses fetch , make sure you have that
+     * 
+     * 
+     * @param {String} url url with out params
+     * @param {Object} options params with key and value pair
+     * @param {Object} headers objects to put as header for your request
+     */
+
+    function Post(url, options = {}, headers = {}) {
+        return fetch(url, {
+            method: 'PUT',
+            headers: headers ,
+            body: JSON.stringify(options)
+        });
+    }
+
+
+
+
 
     function optionsToUrl(url, options) {
 
@@ -30,7 +72,7 @@ var fetchGet = (function mainGetFunction() {
         }
         return url;
     }
-    return {Get:Get};
+    return {Get,Put,Post};
 })();
 
 exports.default = fetchGet;
